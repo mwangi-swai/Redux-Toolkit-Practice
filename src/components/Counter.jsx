@@ -21,17 +21,18 @@ export default function Counter() {
   return (
     <>
       <section>
+        {/* <div className="section-center"> */}
         <h1>My Counter</h1>
         <p>{counter}</p>
         <div className="elements">
-          <div>
-            <button onClick={decrementHandler}>decrement</button>
-            <button onClick={incrementHandler}>Increment</button>
-          </div>
-          <p>
-            <button onClick={resetHandler}>Reset</button>
-          </p>
+          <button onClick={decrementHandler}>decrement</button>
+          <button onClick={incrementHandler}>Increment</button>
         </div>
+        <p>
+          <button onClick={resetHandler}>Reset</button>
+        </p>
+
+        {/* </div> */}
       </section>
     </>
   );
